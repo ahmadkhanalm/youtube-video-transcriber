@@ -1,4 +1,4 @@
-# 🎬 YouTube Video Transcriber
+# YouTube Video Transcriber
 
 > **Fast, accurate, and interactive YouTube video transcript extraction tool built with React 19, TypeScript, Supabase, and Apify.**
 
@@ -10,9 +10,9 @@
 
 ---
 
-## 🌟 Overview
+## Overview
 
-**YouTube Video Transcriber** is a full-stack web application designed to fetch, parse, render, and manage video transcripts from YouTube URLs, Shorts, and video IDs. 
+**YouTube Video Transcriber** is a full-stack web application designed to fetch, parse, render, and manage video transcripts from YouTube URLs, Shorts, and video IDs.
 
 It provides an interactive interface with real-time text searching, timestamp navigation, full text copying, user authentication via Supabase Auth, and serverless background transcript generation powered by Supabase Edge Functions and Apify.
 
@@ -20,36 +20,36 @@ Whether you're summarizing lectures, analyzing video content, creating AI traini
 
 ---
 
-## ✨ Features
+## Features
 
-- ⚡ **Instant Transcript Extraction**: Accepts standard YouTube URLs (`youtube.com/watch?v=...`), short links (`youtu.be/...`), Shorts (`youtube.com/shorts/...`), embeds, or raw 11-character video IDs.
-- 🕒 **Timestamp Navigation**: Interactive segment breakdown with precise timestamps.
-- 🔍 **Real-Time Transcript Search**: Instantly filter captions by keywords and phrases.
-- 📋 **One-Click Export & Copy**: Copy full transcripts or individual timestamped segments with a single click.
-- 🔐 **Supabase Authentication**: Built-in user sign up, sign in, and session management.
-- 📊 **Daily Quotas & History**: User-based transcript generation history and quota enforcement via database policies.
-- 🌐 **Multi-Language Support**: Supports English, auto-detect, Spanish, French, German, and auto-generated captions.
-- 🛡️ **Row-Level Security (RLS)**: Production-grade database migrations with strict RLS policies.
-- 🎨 **Modern Dark UI**: Fluid, responsive, glassmorphic layout built with custom CSS variables and Lucide React icons.
+- **Instant Transcript Extraction**: Accepts standard YouTube URLs (`youtube.com/watch?v=...`), short links (`youtu.be/...`), Shorts (`youtube.com/shorts/...`), embeds, or raw 11-character video IDs.
+- **Timestamp Navigation**: Interactive segment breakdown with precise timestamps.
+- **Real-Time Transcript Search**: Instantly filter captions by keywords and phrases.
+- **One-Click Export & Copy**: Copy full transcripts or individual timestamped segments with a single click.
+- **Supabase Authentication**: Built-in user sign up, sign in, and session management.
+- **Daily Quotas & History**: User-based transcript generation history and quota enforcement via database policies.
+- **Multi-Language Support**: Supports English, auto-detect, Spanish, French, German, and auto-generated captions.
+- **Row-Level Security (RLS)**: Production-grade database migrations with strict RLS policies.
+- **Modern Dark UI**: Fluid, responsive, glassmorphic layout built with custom CSS variables and Lucide React icons.
 
 ---
 
-## 🏗️ Architecture & Tech Stack
+## Architecture & Tech Stack
 
 ```
 YouTube Video Transcriber Architecture
-├── ⚛️ Frontend (React 19 + TypeScript + Vite)
+├── Frontend (React 19 + TypeScript + Vite)
 │   ├── Component UI & State Management (App.tsx)
 │   ├── YouTube Input Parsing & Validation (src/lib/youtube.ts)
 │   ├── Transcript Normalization & Helpers (src/lib/transcript.ts)
 │   └── Supabase Client Setup (src/lib/supabase.ts)
 │
-├── ⚡ Backend / Edge Functions (Supabase Edge Function + Deno)
+├── Backend / Edge Functions (Supabase Edge Function + Deno)
 │   └── generate-transcript Edge Function (apify.com scraper integration)
 │
-└── 🗄️ Database (Supabase Postgres)
-    ├── User Profiles Schema (`profiles`)
-    └── Transcript Generations History (`transcript_generations`)
+└── Database (Supabase Postgres)
+    ├── User Profiles Schema (profiles)
+    └── Transcript Generations History (transcript_generations)
 ```
 
 ### Stack Breakdown
@@ -62,7 +62,7 @@ YouTube Video Transcriber Architecture
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Prerequisites
 
@@ -100,11 +100,11 @@ VITE_SUPABASE_URL=https://your-project-ref.supabase.co
 VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
 ```
 
-> ⚠️ **Security Notice**: Never commit `.env` or API keys to git. All secret files are ignored by default in `.gitignore`.
+> **Security Notice**: Never commit `.env` or API keys to git. All secret files are ignored by default in `.gitignore`.
 
 ---
 
-## 🗄️ Database & Edge Function Setup
+## Database & Edge Function Setup
 
 ### Database Migrations
 
@@ -138,7 +138,7 @@ supabase secrets set --env-file supabase/functions/.env --project-ref your-proje
 
 ---
 
-## 🛠️ Development & Testing
+## Development & Testing
 
 ### Run Development Server
 
@@ -166,7 +166,7 @@ This compiles TypeScript definitions (`tsc -b`) and generates optimized producti
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -204,17 +204,17 @@ This compiles TypeScript definitions (`tsc -b`) and generates optimized producti
 
 ---
 
-## 🛡️ License
+## License
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more details.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!  
 Feel free to check the [issues page](https://github.com/ahmadkhanalm/youtube-video-transcriber/issues).
 
 ---
 
-<p align="center">Crafted with ❤️ by <a href="https://github.com/ahmadkhanalm">Ahmad Khan</a></p>
+<p align="center">Maintained by <a href="https://github.com/ahmadkhanalm">Ahmad Khan</a></p>
